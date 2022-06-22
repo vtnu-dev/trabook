@@ -2765,7 +2765,7 @@ footer {
 .footer__right-title {
   font-size: 2.1rem;
   line-height: 1.2380952381;
-  margin: 0px 0px 32px 0px;
+  margin: 0px 0px 20px 0px;
   font-weight: 600;
   color: #222;
 }
@@ -3552,10 +3552,6 @@ nav {
 }
 
 @media (max-width: 992px) {
-  .about {
-    padding: 0px 0px 120px 0px;
-  }
-
   .about__discover {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3849,6 +3845,7 @@ nav {
 
   .newsletter__input {
     border-radius: 10px;
+    width: 90%;
   }
 
   .newsletter__btn {
@@ -3894,7 +3891,7 @@ nav {
   }
 
   .about {
-    padding: 0px 0px 30px 0px;
+    padding: 120px 0px 30px 0px;
   }
 
   .about__title {
