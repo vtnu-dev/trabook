@@ -2911,10 +2911,6 @@ nav {
   outline: 1px solid #FA7436;
 }
 
-.logo a {
-  color: white;
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3595,7 +3591,7 @@ nav {
     background: #FEFCFB;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: none;
   }
@@ -3606,7 +3602,7 @@ nav {
     display: flex;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

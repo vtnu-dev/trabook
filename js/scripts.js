@@ -42,18 +42,23 @@ function burgerMenu() {
 				removeActive()
 			}
 		})
+      
+      window.addEventListener('orientationchange', () => {
+            removeActive()
+      })
+
+      // Вот тут мы ставим брейкпоинт навбара
+	window.addEventListener('resize', () => {
+		if (window.innerWidth > 991.98) {
+			removeActive()
+		}
+	})
+
 	}
 
 	burger.addEventListener('click', toogleMenu)
 
-	// Вот тут мы ставим брейкпоинт навбара
-	window.addEventListener('resize', () => {
-		if (window.innerWidth > 991.98) {
-			menu.classList.remove('active')
-			burger.classList.remove('active-burger')
-			body.classList.remove('locked')
-		}
-	})
+	
 }
 burgerMenu()
 
@@ -148,18 +153,18 @@ var swiperOne = new Swiper('.swiper-one', {
 		prevEl: '.destination__button-prev',
 	},
 	breakpoints: {
-		1220: {
-			slidesPerView: 4,
-		},
+      320: {
+         slidesPerView: 1,
+      },
+      768: {
+         slidesPerView: 2,
+      },
 		950: {
-			slidesPerView: 3,
+         slidesPerView: 3,
 		},
-		768: {
-			slidesPerView: 2,
-		},
-		320: {
-			slidesPerView: 1,
-		},
+      1220: {
+         slidesPerView: 4,
+      },
 	},
 })
 
@@ -175,14 +180,14 @@ var swiperTwo = new Swiper(".swiper-two", {
      prevEl: ".tour__button-prev",
    },
    breakpoints: {
+      320: {
+         slidesPerView: 1,
+      },
+      768: {
+         slidesPerView: 2,
+      },
 		950: {
 			slidesPerView: 3,
-		},
-		768: {
-			slidesPerView: 2,
-		},
-		320: {
-			slidesPerView: 1,
 		},
 	},
 
@@ -218,71 +223,21 @@ var swiperTwo = new Swiper(".swiper-two", {
      dynamicMainBullets: 1,
    },
    breakpoints: {
-		1220: {
-			slidesPerView: 4,
-		},
+      320: {
+         slidesPerView: 1,
+      },
+      768: {
+         slidesPerView: 2,
+      },
 		950: {
-			slidesPerView: 3,
+         slidesPerView: 3,
 		},
-		768: {
-			slidesPerView: 2,
-		},
-		320: {
-			slidesPerView: 1,
-		},
+      1220: {
+         slidesPerView: 4,
+      },
 	},
    
  });
 
-/*
-var swiperTwo = new Swiper(".swiper-two", {
-   slidesPerView: 3,
-   spaceBetween: 30,
-   slidesPerGroup: 3,
-   loop: true,
-   loopFillGroupWithBlank: true,
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
- });
 
-
-var swiperThree = new Swiper(".swiper-three", {
-   slidesPerView: 3,
-   spaceBetween: 30,
-   slidesPerGroup: 3,
-   loop: true,
-   loopFillGroupWithBlank: true,
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
- });
-
-
-var swiperFour = new Swiper(".swiper-four", {
-   slidesPerView: 3,
-   spaceBetween: 30,
-   slidesPerGroup: 3,
-   loop: true,
-   loopFillGroupWithBlank: true,
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-   },
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
- });
- */
 
