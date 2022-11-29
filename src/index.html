@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trabook</title>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+   <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+   <div class="wrapper">
+         <!-- Header -->
+   @@include('./html/_header.html')
+
+   <!-- Main Page -->
+   <main>
+      @@include('./html/_about.html')
+      @@include('./html/_steps.html')
+      @@include('./html/_destination.html')
+      @@include('./html/_tour.html')
+      @@include('./html/_reviews.html')
+      @@include('./html/_blog.html')
+      @@include('./html/_newsletter.html')
+   </main>
+   <!-- Footer -->
+   @@include('./html/_footer.html')
+   </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

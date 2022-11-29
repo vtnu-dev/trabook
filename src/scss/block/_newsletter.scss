@@ -1,0 +1,112 @@
+.newsletter {
+	//transform: matrix(-1, 0, 0, 1, 0, 0);
+
+	&__body {
+		width: 100%;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $color-p-orange;
+		border-radius: 16px;
+
+		background-image: url('../img/newsletter/palms-tree.svg'), url('../img/newsletter/newsletter-element.svg');
+		background-repeat: no-repeat;
+		background-position: right 10px, left bottom;
+	}
+
+	&__title {
+		@include font(4.8rem, 6.2rem);
+		max-width: 708px;
+		color: #fff;
+
+		@include media-max(400px) {
+			@include font(4.2rem, 6.2rem);
+		}
+	}
+
+	&__subscribe {
+		width: 674px;
+		max-width: 100%;
+		margin: 64px 0px 0px 0px;
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+
+		@include media-max(465px) {
+			flex-direction: column;
+		}
+	}
+
+	&__input {
+		@include font(1.6rem, 2.4rem);
+		width: 100%;
+		padding: 22px 48px;
+		background: #ffffff;
+		border-radius: 10px 0px 0px 10px;
+
+		&::placeholder {
+			position: relative;
+			left: -26px;
+			padding: 0px 0px 0px 26px;
+			@include font(1.6rem, 2.4rem);
+			background: url('../img/newsletter/email-icon.svg') no-repeat left center;
+		}
+
+		&:focus {
+			outline: none;
+			box-shadow: 0px 0px 10px #666;
+		}
+
+		@include media-max(465px) {
+			border-radius: 10px;
+         width: 90%;
+		}
+	}
+
+	&__btn {
+		background-color: #fff;
+		border: 9px solid #fff;
+		border-radius: 0px 10px 10px 0;
+
+		@include media-max(465px) {
+			border-radius: 10px;
+			margin: 20px 0px 0px 0px;
+			border: 2px solid #fff;
+		}
+	}
+
+	&__btn-subscribe {
+		@include font(1.6rem, 2.4rem);
+		min-height: 50px;
+		padding: 5px 26px;
+		border-radius: 10px;
+
+		&:focus {
+			outline: none;
+			color: $color-p-orange;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px $color-p-orange;
+		}
+
+		@include media-max(465px) {
+			color: #fa7436;
+			background-color: #fff;
+			border: 1px solid #fa7436;
+
+			&:hover {
+				box-shadow: inset 0px 0px 10px $color-p-orange;
+			}
+
+			&:focus {
+				box-shadow: inset 0px 0px 10px $color-p-orange;
+			}
+			&:active {
+				box-shadow: inset 0px 0px 20px $color-p-orange;
+			}
+		}
+	}
+}

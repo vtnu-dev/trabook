@@ -1,0 +1,150 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+@import 'fonts';
+@import './libs/swiper';
+
+//================================================================================//
+@import '_mixins/reset';
+@import '_mixins/media';
+@import '_mixins/container';
+@import '_mixins/flex';
+/*==============================================================================*/
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	font-weight: $font-weight-base;
+	font-style: $font-style-base;
+   background-color: $color-p-orange;
+}
+
+
+.vhidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50px;
+	padding: 5px 50px;
+	color: #fff;
+	background-color: $color-p-orange;
+	border-radius: 5px;
+	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+
+	&:hover {
+		color: $color-p-orange;
+		background-color: #fff;
+		box-shadow: 0px 0px 10px $color-p-orange;
+	}
+
+	&:focus {
+		outline: 1px solid $color-p-orange;
+	}
+   &:active {
+      box-shadow: inset 0px 0px 20px $color-p-orange;
+   }
+}
+
+.primary-color {
+	color: $color-p-orange;
+}
+
+.heading-title {
+	@include font-volkhov-bold;
+	@include font(4.8rem, 5.4rem);
+	text-align: center;
+	color: #222;
+
+   @include media-max(400px) {
+      @include font(4.4rem, 5.8rem);
+   }
+}
+
+.heading-subtitle {
+   max-width: 432px;
+	@include font(1.8rem, 3.2rem);
+   margin: 24px auto 64px;
+	text-align: center;
+	color: #666;
+}
+
+.btn-book {
+   position: absolute;
+   left: 50%;
+   bottom: 12%;
+   padding: 5px 22px;
+   min-height: 50px;
+   transition: opacity 1s, transform 1s;
+   transform: translateX(-50%) scale(0);
+   opacity: 0;
+
+   &:active {
+      box-shadow: inset 0px 0px 20px $color-p-orange;
+   }
+}
+
+.item__img{
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.3s;
+   }
+}
+
+.swiper-button{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   transition: box-shadow .3s;
+
+   &:hover {
+      box-shadow: inset 0px 0px 10px #666;
+   }
+
+   &::after {
+      content: '';
+   }
+
+   &:focus{
+      outline: none;
+      box-shadow: inset 0px 0px 10px #666;
+   }
+
+   &:active {
+      box-shadow: inset 0px 0px 20px $color-p-orange;
+   }
+}
+
+
+// Libs
+@import 'libs/swiper';
+@import 'block/*.scss';

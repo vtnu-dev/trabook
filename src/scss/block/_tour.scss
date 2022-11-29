@@ -1,0 +1,149 @@
+.tour {
+	padding: 50px 0px 50px 0px;
+
+	&__top {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__title {
+		@include media-max(400px) {
+			@include font(4.4rem, 5.8rem);
+		}
+	}
+
+	&__subtitle {
+		max-width: 521px;
+		margin: 24px 0px 0px 0px;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0%;
+		right: 5%;
+		transform: translateX(-50%);
+
+		img {
+			width: 100%;
+		}
+
+		@include media-max(992px) {
+			display: none;
+		}
+	}
+
+	.swiper-two {
+		padding: 24px 0px 70px 0px;
+	}
+
+
+
+	&__swiper-buttons {
+		position: relative;
+		right: 0;
+		bottom: 24px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row-reverse;
+		column-gap: 40px;
+
+		@include media-max(1050px) {
+			justify-content: center;
+		}
+	}
+
+	&__button-next {
+		background-color: $color-p-orange;
+	}
+
+
+
+	.item {
+		width: 370px;
+		height: 447px;
+		background: #ffffff;
+		border: 2px solid rgba(102, 102, 102, 0.08);
+		border-radius: 16px;
+		transition: box-shadow 0.5s;
+
+		.item__img {
+		transition: transform .3s;
+		}
+
+		&:hover {
+			box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+
+			.item__img {
+				transform: scale(.98);
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			.btn-book {
+				opacity: 1;
+				transform: translateX(-50%) scale(1);
+			}
+		}
+
+		&__img {
+			img {
+				width: 100%;
+				height: 327px;
+				object-fit: cover;
+				border-radius: 16px;
+			}
+		}
+
+		&__description {
+			padding: 24px 24px 24px 27px;
+		}
+
+		&__city {
+			display: flex;
+			justify-content: space-between;
+			@include font(2.4rem, 3.2rem);
+		}
+
+		&__city-name {
+			font-weight: 500;
+			color: #222;
+		}
+
+		&__country-price {
+			font-weight: 600;
+			color: $color-p-orange;
+		}
+
+		&__trip {
+			display: flex;
+			justify-content: space-between;
+			margin: 16px 0px 0px 0px;
+		}
+
+		&__trip-time {
+			display: flex;
+			align-items: center;
+		}
+
+		&__trip-time--name {
+			margin: 0px 0px 0px 14.5px;
+			@include font(1.6rem, 2.4rem);
+			font-weight: 500;
+			color: #666;
+		}
+
+		&__trip-rating {
+			display: flex;
+			align-items: center;
+		}
+
+		&__trip-rating--numbers {
+			margin: 0px 0px 0px 8px;
+			@include font(1.6rem, 2.4rem);
+			font-weight: 400;
+			color: #666;
+		}
+	}
+}
