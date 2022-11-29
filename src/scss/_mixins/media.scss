@@ -1,0 +1,19 @@
+// Medea expression
+@mixin media-min($width) {
+	@media (min-width: $width) {
+		@content;
+	}
+}
+@mixin media-max($width) {
+	@media (max-width: $width) {
+		@content;
+	}
+}
+
+// Check Point
+@mixin bp($name) {
+	$width: map-get($breakpoints, $name);
+	@include media($width) {
+		@content;
+	}
+}

@@ -1,0 +1,147 @@
+.destination {
+	padding: 120px 0px 100px 0px ;
+
+	@include media-max(400px) {
+		padding: 50px 0px;
+	}
+
+	&__title {
+		@include media-max(400px) {
+			@include font(4.4rem, 5.8rem);
+		}
+	}
+
+	.swiper-one {
+		padding: 0px 0px 80px 0px;
+	}
+
+	&__swiper-buttons {
+		position: relative;
+		bottom: -68px;
+		display: flex;
+		justify-content: center;
+		flex-direction: row-reverse;
+		column-gap: 40px;
+	}
+
+
+	&__button-next {
+		background: $color-p-orange;
+	}
+   &__button--prev {
+		background: #fefcfb;
+		border: 1px solid rgba(153, 153, 153, 0.5);
+		//transform: matrix(-1, 0, 0, 1, 0, 0);
+	}
+}
+
+.destination__items {
+
+	.item {
+		width: 270px;
+		height: 426px;
+		border-radius: 10px;
+		border: 2px solid rgba(102, 102, 102, 0.08);
+		background-color: #fefcfb;
+		overflow: hidden;
+		transition: box-shadow .3s;
+		.item__img {
+			transition: transform .3s;
+		}
+
+		&:hover {
+			box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+			
+
+			.item__img {
+				transform: scale(.98);
+				&::before {
+					opacity: 1;
+				}
+			}
+
+			.btn-book {
+				opacity: 1;
+				transform: translateX(-50%) scale(1);
+			}
+		}
+
+		&__img {
+         
+         img {
+				width: 100%;
+            height: 290px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+
+		
+		}
+
+		&__description {
+			width: 270px;
+			padding: 32px 16px;
+			//background-color: transparent;
+		}
+
+		&__city {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__city-name {
+			@include font(2.4rem, 2.6rem);
+			font-weight: 500;
+			color: #222;
+		}
+
+		&__city-rating {
+			display: flex;
+			align-items: center;
+		}
+
+
+		&__city-rating--numbers {
+			@include font(1.6rem, 2.4rem);
+			margin: 0px 0px 0px 8px;
+		}
+
+		&__country {
+			margin: 19px 0px 0px 0px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__country-location {
+			display: flex;
+			align-items: center;
+		}
+
+
+		&__country--name {
+			@include font(1.6rem, 2rem);
+			margin: 0px 0px 0px 8px;
+			color: #666;
+		}
+
+		&__country--price {
+			display: flex;
+			align-items: center;
+			@include font(1.6rem, 2.4rem);
+			font-weight: 500;
+		}
+
+		&__country--price-old {
+			text-decoration: line-through;
+			color: #999;
+		}
+
+		&__country--price-new {
+			padding: 2px 5px;
+			margin: 0px 0px 0px 16px;
+			border-radius: 8px;
+			color: $color-p-orange;
+			background-color: #ffe7db;
+		}
+	}
+}

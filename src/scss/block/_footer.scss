@@ -1,0 +1,146 @@
+// Footer
+footer {
+	background-color: $color-bg-ice;
+}
+
+.footer {
+	padding: 100px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@include media-max(880px) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		max-width: 254px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		@include media-max(880px) {
+			justify-content: center;
+			align-items: center;
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__text {
+		margin: 24px 0px 0px 0px;
+		@include font(1.6rem, 3.2rem);
+		font-weight: 500;
+		max-width: 254px;
+		color: #666;
+	}
+
+	&__social {
+		display: flex;
+		margin: 16px 0px 0px 0px;
+
+		&-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			font-size: 1.6rem;
+			background-color: #fff;
+
+			transition: background-color 0.3s, transform .3s;
+
+			&:hover {
+           transform: scale(1.2);
+				background-color: $color-p-orange;
+
+				svg {
+					path {
+						fill: #fff;
+						color: #fff;
+						transition: all 0.1s;
+					}
+				}
+			}
+
+			&:not(:last-child) {
+				margin-right: 26px;
+			}
+		}
+	}
+
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		width: 55%;
+
+		@include media-max(880px) {
+			margin: 40px 0px 0px 0px;
+			width: 100%;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		&-title {
+			@include font(2.1rem, 2.6rem);
+			margin: 0px 0px 20px 0px;
+			font-weight: 600;
+			color: #222;
+		}
+
+		&-item {
+			padding: 0px 10px;
+			min-height: 140px;
+
+			@include media-max(880px) {
+				padding: 20px 10px;
+			}
+
+			ul {
+				li {
+					&:not(:last-child) {
+						margin: 0px 0px 16px 0px;
+					}
+				}
+			}
+		}
+	}
+
+	&__right-link {
+		@include font(1.8rem, 2.6rem);
+		color: #666;
+		transition: text-decoration 0.3s;
+
+		&:hover {
+			text-decoration: underline;
+			color: $color-p-orange;
+		}
+	}
+	&__line {
+		margin: 40px 0px 0px 0px;
+		width: 100%;
+		border: 1px solid rgba(153, 153, 153, 0.56);
+	}
+
+	&__bottom {
+		@include font(1.6rem, 2.4rem);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px;
+		width: 100%;
+		color: #666;
+
+		@include media-max(650px) {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+}

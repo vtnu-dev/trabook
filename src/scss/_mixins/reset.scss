@@ -1,0 +1,29 @@
+// Reset of the block model
+@mixin reset-model {
+	padding: 0;
+	margin: 0;
+}
+
+// Reset of the list
+@mixin reset-list {
+	list-style: none;
+	@include reset-model();
+}
+
+// Reference for the link
+@mixin reset-link {
+	text-decoration: none;
+	bottom: 0;
+	color: inherit;
+	font-family: inherit;
+}
+
+// Reset button
+@mixin reset-button {
+	text-decoration: none;
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}

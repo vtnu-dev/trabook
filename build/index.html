@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trabook</title>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+   <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+   <div class="wrapper">
+         <!-- Header -->
+   <header>
+   <!-- Navbar -->
+   <nav>
+   <div class="container">
+         <div class="navbar">
+            <div class="logo"> <a href="#"><img src="./img/logo.svg" alt="logo"></a></div>
+            <ul class="menu">
+               <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
+               <li class="menu__item"><a href="#about" class="menu__item-link" data-scroll>About</a></li>
+               <li class="menu__item"><a href="#destination" class="menu__item-link" data-scroll>Destination</a></li>
+               <li class="menu__item"><a href="#tour" class="menu__item-link" data-scroll>Tour</a></li>
+               <li class="menu__item"><a href="#blog" class="menu__item-link" data-scroll>Blog</a></li>
+               
+               <div class="navbar__btns">
+                  <a class="navbar__btn-login" href="">Login</a>
+                  <a class="navbar__btn-signup btn" href="">Sign up</a>
+               </div>
+            </ul>
+
+
+            <div class="burger">
+               <span></span>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+</header>
+
+   <!-- Main Page -->
+   <main>
+      <section class="section-about about" id="about">
+	<div class="about__container container">
+		<div class="about__discover">
+
+			<div class="about__description">
+				<h1 class="about__title">Get started your exciting <span class="primary-color">journey</span> with us.</h1>
+				<p class="about__text">A Team of experienced tourism professionals will provide you with the best advice and
+					tips for your desire place. </p>
+				<a href="" class="about__btn-discover btn">Discover Now</a>
+			</div>
+
+			<div class="about__img">
+				<img src="./img/about/bg.png" alt="background aircraft" class="about__img-bg">
+				<img src="./img/about/main.png" alt="happy man" class="about__img-main">
+
+
+
+				<div class="about__achievements achievements">
+					<div class="achievements__items achievements__items-1">
+						<img src="./img/about/achievements-1.svg" alt="achievements icon" class="">
+
+						<div class="achievements__items-text">
+							<p class="achievements__items-title">Best Tour Awards</p>
+						</div>
+					</div>
+
+					<div class="achievements__items achievements__items-2">
+						<img src="./img/about/achievements-2.svg" alt="achievements icon" class="">
+
+						<div class="achievements__items-text">
+							<p class="achievements__items-title">Explore</p>
+							<p class="achievements__items-description">Every cornar of the world with us</p>
+						</div>
+					</div>
+
+					<div class="achievements__items achievements__items-3">
+						<img src="./img/about/achievements-3.svg" alt="achievements icon" class="">
+						<div class="achievements__items-text">
+							<p class="achievements__items-title">27K</p>
+							<p class="achievements__items-description">Customer Reviewd</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="about__explore">
+
+
+
+			<form class="about__form" action="#">
+
+				<div class="about__select">
+					<select name="lacation" id="lacation" class="select select-lacation" required>
+						<option value="" disabled selected>Location</option>
+						<option value="Rome">Rome</option>
+						<option value="London">London</option>
+						<option value="Osaka">Osaka</option>
+						<option value="Paris">Paris</option>
+						<option value="Madrid">Madrid</option>
+					</select>
+					<p class="label-description">Where are you going</p>
+				</div>
+
+
+				<div class="about__select">
+
+					<input class="today input-date" name="datefilter" id="today" type="text" value="Date" placeholder="Date" readonly>
+
+					<p class="label-description label-today">When you will go</p>
+				</div>
+
+
+
+
+				<div class="about__select">
+					<select name="guest" id="guest" class="select select-guest" required>
+						<option value="" disabled selected>Guest</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					<p class="label-description">Number of guest</p>
+				</div>
+
+
+				<button type="submit" class="about__btn-explore btn">Explore Now</button>
+			</form>
+
+		</div>
+
+	</div>
+</section>
+      <section class="section-steps steps">
+	<div class="steps__container container">
+
+
+	<h2 class="heading-title steps__title">
+		Things you need <span class="primary-color">to do</span>
+	</h2>
+
+	<div class=" steps__bg"><img src="./img/steps/planes-bg.svg" alt=""></div>
+
+		<div class="steps__items">
+
+			<div class="steps__item">
+				<img src="./img/steps/1.svg" alt="icon" class="steps__item-icon">
+				<h3 class="steps__item-title">Sign Up</h3>
+				<p class="steps__item-description">Completes all the work associated with planning and processing</p>
+			</div>
+
+			<div class="steps__item">
+				<img src="./img/steps/2.svg" alt="icon" class="steps__item-icon">
+				<h3 class="steps__item-title">Worth of Money</h3>
+				<p class="steps__item-description">Completes all the work associated with planning and processing</p>
+			</div>
+
+			<div class="steps__item">
+				<img src="./img/steps/3.svg" alt="icon" class="steps__item-icon">
+				<h3 class="steps__item-title">Exciting Travel</h3>
+				<p class="steps__item-description">Completes all the work associated with planning and processing</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+      <section class="section-destination destination" id="destination">
+   <div class="destination__container container">
+      <h2 class="heading-title destination__title">Exclusive <span class="primary-color">destination & discounts</span></h2>
+      <p class="heading-subtitle destination__subtitle">Discover our fantastic early booking discounts & start planning your
+         journey.</p>
+
+
+
+
+      <div class="swiper-one swiper">
+         <div class="swiper-wrapper destination__items">
+
+
+            <div class="swiper-slide destination__item item">
+
+               <div class="item__img">
+                  <img src="./img/destination/madrid.jpg" alt="madrid">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+               <div class="item__description">
+                  <div class="item__city">
+                     <h4 class="item__city-name">Madrid</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.8</p>
+
+                     </div>
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Spain</p>
+
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$950</p>
+                        <p class="item__country--price-new">$850</p>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+
+               <div class="item__img">
+                  <img src="./img/destination/firenze.jpg" alt="firenze">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Firenze</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.5</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Italy</p>
+
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$850</p>
+                        <p class="item__country--price-new">$750</p>
+
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+
+               <div class="item__img">
+                  <img src="./img/destination/paris.jpg" alt="paris">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+               <div class="item__description">
+                  <div class="item__city">
+                     <h4 class="item__city-name">Paris</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.4</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">France</p>
+
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$699</p>
+                        <p class="item__country--price-new">$599</p>
+
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+            <div class="swiper-slide destination__item item">
+               <div class="item__img">
+                  <img src="./img/destination/london.jpg" alt="london">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">London</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.8</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">UK</p>
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$950</p>
+                        <p class="item__country--price-new">$850</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+               <div class="item__img">
+                  <img src="./img/destination/berlin.jpg" alt="berlin">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+               <div class="item__description">
+                  <div class="item__city">
+                     <h4 class="item__city-name">Berlin</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.8</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Germany</p>
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$550</p>
+                        <p class="item__country--price-new">$500</p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+               <div class="item__img">
+                  <img src="./img/destination/praga.jpg" alt="praga">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Praga</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.7</p>
+
+                     </div>
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Czech</p>
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$750</p>
+                        <p class="item__country--price-new">$650</p>
+
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+
+
+               <div class="item__img">
+                  <img src="./img/destination/warsaw.jpg" alt="warsaw">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Warsaw</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.7</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Poland</p>
+                     </div>
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$550</p>
+                        <p class="item__country--price-new">$400</p>
+
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide destination__item item">
+               <div class="item__img">
+                  <img src="./img/destination/minsk.jpg" alt="minsk">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Minsk</h4>
+                     <div class="item__city-rating">
+                        <img class="item__city-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__city-rating--numbers">4.6</p>
+
+                     </div>
+
+                  </div>
+
+                  <div class="item__country">
+                     <div class="item__country-location">
+                        <img class="item__country--icon" src="./img/destination/location-icon.svg" alt="location-icon">
+                        <p class="item__country--name">Belarus</p>
+                     </div>
+
+                     <div class="item__country--price">
+                        <p class="item__country--price-old">$500</p>
+                        <p class="item__country--price-new">$450</p>
+
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+
+
+
+         </div>
+         <div class="destination__swiper-buttons">
+            <button class="destination__button-next destination__button swiper-button">
+               <img src="./img/arrow-right.svg" alt="arrow-right">
+            </button>
+            <button class="destination__button-prev destination__button swiper-button">
+               <img src="./img/arrow-left.svg" alt="arrow-left">
+            </button>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+</section>
+      <section class="section-tour tour" id="tour">
+   <div class="tour__container container">
+      <div class="tour__top">
+         <div class="tour__top-text">
+            <h2 class="heading-title tour__title">Best <span class="primary-color">vacation plan</span></h2>
+            <p class="heading-subtitle tour__subtitle">Plan your perfect vacation with our travel agency. Choose among
+               hundreds of all-inclusive offers!</p>
+         </div>
+         <div class="tour__bg"><img src="./img/tour/palm-trees-bg.svg" alt=""></div>
+      </div>
+
+
+      <div class="swiper-two swiper">
+
+         <div class="tour__swiper-buttons">
+            <button class="tour__button-next tour__button swiper-button">
+               <img src="./img/arrow-right.svg" alt="arrow-right">
+            </button>
+            <button class="tour__button-prev tour__button swiper-button">
+               <img src="./img/arrow-left.svg" alt="arrow-left">
+            </button>
+         </div>
+
+
+
+
+
+         <div class="swiper-wrapper tour__items">
+
+
+            <div class="swiper-slide tour__item item">
+
+               <div class="item__img">
+                  <img src="./img/tour/rome.jpg" alt="rome">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Rome, Italy</h4>
+                     <p class="item__country-price">$5,42k</p>
+                  </div>
+
+                  <div class="item__trip">
+                     <div class="item__trip-time">
+                        <img class="item__trip-time--icon" src="./img/tour/navigation-icon.svg" alt="navigation-icon">
+                        <p class="item__trip-time--name">10 Days Trip</p>
+                     </div>
+
+                     <div class="item__trip-rating">
+                        <img class="item__trip-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__trip-rating--numbers">4.8</p>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="swiper-slide tour__item item">
+
+               <div class="item__img">
+                  <img src="./img/tour/london.jpg" alt="london">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">London, UK</h4>
+                     <p class="item__country-price">$2,42k</p>
+                  </div>
+
+                  <div class="item__trip">
+                     <div class="item__trip-time">
+                        <img class="item__trip-time--icon" src="./img/tour/navigation-icon.svg" alt="navigation-icon">
+                        <p class="item__trip-time--name">07 Days Trip</p>
+                     </div>
+
+                     <div class="item__trip-rating">
+                        <img class="item__trip-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__trip-rating--numbers">4.7</p>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="swiper-slide tour__item item">
+
+               <div class="item__img">
+                  <img src="./img/tour/osaka.jpg" alt="osaka">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Osaka, Japan</h4>
+                     <p class="item__country-price">$5,82k</p>
+                  </div>
+
+                  <div class="item__trip">
+                     <div class="item__trip-time">
+                        <img class="item__trip-time--icon" src="./img/tour/navigation-icon.svg" alt="navigation-icon">
+                        <p class="item__trip-time--name">8 Days Trip</p>
+                     </div>
+
+                     <div class="item__trip-rating">
+                        <img class="item__trip-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__trip-rating--numbers">4.8</p>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="swiper-slide tour__item item">
+
+               <div class="item__img">
+                  <img src="./img/tour/bialystok.jpg" alt="belostok">
+                  <a href="" class="btn-book btn">Book Now</a>
+               </div>
+
+               <div class="item__description">
+
+                  <div class="item__city">
+                     <h4 class="item__city-name">Bialystok, Poland</h4>
+                     <p class="item__country-price">$2,82k</p>
+                  </div>
+
+                  <div class="item__trip">
+                     <div class="item__trip-time">
+                        <img class="item__trip-time--icon" src="./img/tour/navigation-icon.svg" alt="navigation-icon">
+                        <p class="item__trip-time--name">5 Days Trip</p>
+                     </div>
+
+                     <div class="item__trip-rating">
+                        <img class="item__trip-rating--icon" src="./img/star-icon.svg" alt="star-icon">
+                        <p class="item__trip-rating--numbers">5.0</p>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+</section>
+      <section class="section-reviews reviews">
+
+	<img class="reviews__bg" src="./img/reviews/airplanes-bg.svg" alt="">
+
+	<div class="reviews__container container">
+		<div class="swiper-three swiper">
+
+
+
+			<div class="reviews__left">
+				<div class="reviews__body-text">
+					<h2 class="heading-title reviews__title">What people say <span class="primary-color">about us.</span>
+					</h2>
+					<p class="heading-subtitle reviews__subtitle">Our Clients send us bunch of smilies with our services
+						and we love them.</p>
+				</div>
+
+				<div class="reviews__swiper-buttons">
+					<button class="reviews__button-next reviews__button swiper-button">
+						<img src="./img/arrow-right.svg" alt="arrow-right">
+					</button>
+					<button class="reviews__button-prev reviews__button swiper-button">
+						<img src="./img/arrow-left.svg" alt="arrow-left">
+					</button>
+				</div>
+			</div>
+
+		
+
+
+
+
+
+
+			<div class="swiper-wrapper reviews__items">
+
+
+
+				<div class="swiper-slide reviews__item item">
+					<div class="item__reviews">
+						<img class="item__reviews-img" src="./img/reviews/person-1.jpg" alt="person">
+						<div class="item__reviews-body">
+							<p class="item__reviews-text">
+								“On the Windows talking painted pasture yet its express parties use. Sure last upon he same
+								as knew next. Of believed or diverted no.”
+							</p>
+							<div class="item__reviews-person">
+								<p class="item__reviews-person--name">Mike taylor</p>
+								<p class="item__reviews-person--location">Lahore, Pakistan</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="swiper-slide reviews__item item">
+					<div class="item__reviews">
+						<img class="item__reviews-img" src="./img/reviews/person-2.jpg" alt="person">
+						<div class="item__reviews-body">
+							<p class="item__reviews-text">
+								“Sure last upon he same as knew next. On the Windows talking painted pasture yet its express parties use.  Of believed or diverted no.”
+							</p>
+							<div class="item__reviews-person">
+								<p class="item__reviews-person--name">Bonnie Bequette</p>
+								<p class="item__reviews-person--location">Paris, France</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="swiper-slide reviews__item item">
+					<div class="item__reviews">
+						<img class="item__reviews-img" src="./img/reviews/person-3.jpg" alt="person">
+						<div class="item__reviews-body">
+							<p class="item__reviews-text">
+								“Of believed or diverted no. On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. ”
+							</p>
+							<div class="item__reviews-person">
+								<p class="item__reviews-person--name">Charli Matzke</p>
+								<p class="item__reviews-person--location">California, USA</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+      <section class="section-blog blog" id="blog">
+	<div class="blog__container container">
+		<h2 class="heading-title blog__title">Get update with <span class="primary-color">latest blog</span></h2>
+
+		<div class="swiper-four swiper">
+			<div class="swiper-wrapper blog__items">
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/01.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">The Amazing Difference a Year of Travelling.</a>
+							</p>
+							<p class="item__blog-date">
+								July 27, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/02.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Travel far enough, you meet yourself.</a>
+							</p>
+							<p class="item__blog-date">
+								July 5, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/03.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">How to Save Money While Visiting Africa.</a>
+							</p>
+							<p class="item__blog-date">
+								August 10, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/04.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Reflections on 5 Months of Travel: Time to Hang.</a>
+							</p>
+							<p class="item__blog-date">
+								September 5, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/05.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">The Amazing Difference a Year of Travelling.</a>
+							</p>
+							<p class="item__blog-date">
+								September 18, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/06.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Travel far enough, you meet yourself.</a>
+							</p>
+							<p class="item__blog-date">
+								September 20, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/07.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">How to Save Money While Visiting Africa.</a>
+							</p>
+							<p class="item__blog-date">
+								October 2, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/08.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Reflections on 5 Months of Travel: Time to Hang</a>
+							</p>
+							<p class="item__blog-date">
+								October 12, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/09.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">The Amazing Difference a Year of Travelling.</a>
+							</p>
+							<p class="item__blog-date">
+								October 23, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/10.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Travel far enough, you meet yourself.</a>
+							</p>
+							<p class="item__blog-date">
+								November 7, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide blog__item item">
+					<div class="item__blog">
+						<img class="item__blog-img" src="./img/blog/11.jpg" alt="blog">
+						<div class="item__blog-description">
+							<p class="item__blog-text">
+								<a href="void:0">Reflections on 5 Months of Travel: Time to Hang</a>
+							</p>
+							<p class="item__blog-date">
+								November 14, 2021
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+	</div>
+</section>
+      <section class="section-newsletter newsletter">
+
+
+   <div class="newsletter__container container">
+      <div class="newsletter__body">
+         <h2 class="heading-title newsletter__title">Subscribe and get exclusive deals & offer</h2>
+
+         <div class="newsletter__subscribe">
+            <form action="" class="newsletter__form">
+               <input class="newsletter__input" type="email" name="email" id="email" placeholder="Enter your mail" required autocomplete="off">
+   
+               <div class="newsletter__btn"><button class="newsletter__btn-subscribe btn" type="submit">Subscribe</button></div>
+            </form>
+       </div>
+      </div>
+      
+   </div>
+</section>
+   </main>
+   <!-- Footer -->
+   <footer>
+   <div class="container">
+      <div class="footer">
+         <div class="footer__body">
+            <div class="footer__left">
+               <div class="footer__logo"><a href="#"><img src="./img/logo.svg" alt="logo"></a></div>
+               <div class="footer__text">Book your trip in minute, get full control for much longer.</div>
+               <div class="footer__social">
+
+
+                  <a class="footer__social-facebook footer__social-link" href="http://facebook.com"> <svg width="18"
+                        height="18" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M4.02958 1.53305C3.8214 1.4672 3.58201 1.42329 3.36343 1.42329C3.09281 1.42329 2.50993 1.60989 2.50993 1.97209V2.8392H3.89426V4.29901H2.50993V8.32721H1.11519V4.29901H0.428223V2.8392H1.11519V2.10381C1.11519 0.995228 1.59398 0.0732422 2.74933 0.0732422C3.14485 0.0732422 3.85263 0.0951942 4.23775 0.237883L4.02958 1.53305Z"
+                           fill="#444444" />
+                     </svg></a>
+
+
+                  <a class="footer__social-instagramm footer__social-link" href="http://instagramm.com">
+                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_201_484)">
+                           <path
+                              d="M14.5667 0.933594H2.5C1.12167 0.933594 0 2.05526 0 3.43359V15.5003C0 16.8789 1.12167 18.0003 2.5 18.0003H14.5667C15.9453 18.0003 17.0667 16.8789 17.0667 15.5003V3.43359C17.0667 2.05526 15.9453 0.933594 14.5667 0.933594ZM16.0667 15.5003C16.0667 16.3273 15.3937 17.0003 14.5667 17.0003H2.5C1.673 17.0003 1 16.3273 1 15.5003V3.43359C1 2.60659 1.673 1.93359 2.5 1.93359H14.5667C15.3937 1.93359 16.0667 2.60659 16.0667 3.43359V15.5003Z"
+                              fill="#444" />
+                           <path
+                              d="M14.0334 2.9668C13.4821 2.9668 13.0334 3.41546 13.0334 3.9668C13.0334 4.51813 13.4821 4.9668 14.0334 4.9668C14.5848 4.9668 15.0334 4.51813 15.0334 3.9668C15.0334 3.41546 14.5848 2.9668 14.0334 2.9668Z"
+                              fill="#444" />
+                           <path
+                              d="M8.53345 4.9668C6.05211 4.9668 4.03345 6.98546 4.03345 9.4668C4.03345 11.9481 6.05211 13.9668 8.53345 13.9668C11.0148 13.9668 13.0334 11.9481 13.0334 9.4668C13.0334 6.98546 11.0148 4.9668 8.53345 4.9668ZM8.53345 12.9668C6.60345 12.9668 5.03345 11.3968 5.03345 9.4668C5.03345 7.5368 6.60345 5.9668 8.53345 5.9668C10.4634 5.9668 12.0334 7.5368 12.0334 9.4668C12.0334 11.3968 10.4634 12.9668 8.53345 12.9668Z"
+                              fill="#444" />
+                        </g>
+                     </svg>
+
+                  </a>
+
+
+                  <a class="footer__social-twitter footer__social-link" href="http://twitter.com">
+                     <svg width="18" height="18" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M10.8782 1.77344C10.4912 1.94319 10.0788 2.05571 9.64892 2.11035C10.0912 1.84628 10.4288 1.43132 10.5875 0.93116C10.1751 1.17701 9.71981 1.35067 9.23461 1.44758C8.84306 1.03067 8.28501 0.772461 7.67623 0.772461C6.49509 0.772461 5.5442 1.73116 5.5442 2.90644C5.5442 3.07555 5.55851 3.23815 5.59363 3.39295C3.81997 3.30644 2.25054 2.45636 1.19623 1.1614C1.01217 1.48075 0.9042 1.84628 0.9042 2.23978C0.9042 2.97864 1.28469 3.6336 1.85184 4.01279C1.50908 4.00628 1.17282 3.90677 0.88794 3.75002C0.88794 3.75653 0.88794 3.76498 0.88794 3.77344C0.88794 4.81018 1.62745 5.67132 2.59721 5.8697C2.42355 5.91718 2.23428 5.93994 2.03786 5.93994C1.90127 5.93994 1.76339 5.93214 1.63396 5.90352C1.91038 6.7484 2.69477 7.36953 3.62745 7.3897C2.9016 7.9575 1.97997 8.29962 0.982249 8.29962C0.807289 8.29962 0.639485 8.29181 0.47168 8.27035C1.41672 8.87978 2.53672 9.22775 3.74453 9.22775C7.67038 9.22775 9.81672 5.97571 9.81672 3.15685C9.81672 3.06254 9.81347 2.97149 9.80892 2.88108C10.2323 2.58059 10.5881 2.20531 10.8782 1.77344Z"
+                           fill="#444" />
+                     </svg>
+                  </a>
+
+
+
+               </div>
+            </div>
+
+            <div class="footer__right">
+               <div class="footer__company footer__right-item">
+                  <h4 class="footer__right-title">Company</h4>
+                  <ul>
+                     <li><a class="footer__right-link" href="">About</a></li>
+                     <li><a class="footer__right-link" href="">Careers</a></li>
+                     <li><a class="footer__right-link" href="">Logistic</a></li>
+                     <li><a class="footer__right-link" href="">Privacy & Policy</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer__contact footer__right-item">
+                  <h4 class="footer__right-title">Contact</h4>
+                  <ul>
+                     <li><a class="footer__right-link" href="">Help/FAQ</a></li>
+                     <li><a class="footer__right-link" href="">Press</a></li>
+                     <li><a class="footer__right-link" href="">Affilates</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer__more footer__right-item">
+                  <h4 class="footer__right-title">More</h4>
+                  <ul>
+                     <li><a class="footer__right-link" href="">Press Centre</a></li>
+                     <li><a class="footer__right-link" href="">Our Blog</a></li>
+                     <li><a class="footer__right-link" href="">Low fare tips</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__line"></div>
+
+         <div class="footer__bottom">
+            <p class="footer__bottom-copy">Copyright, Trabook <span class="footer__year">2022</span>. All rights
+               reserved.</p>
+            <p class="footer__bottom-terms">Terms & Conditions</p>
+         </div>
+
+
+      </div>
+   </div>
+</footer>
+   </div>
+
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>
